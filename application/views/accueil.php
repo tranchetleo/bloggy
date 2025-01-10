@@ -13,8 +13,7 @@
 <div class="container mt-5">
     <h1>Derniers articles</h1>
     <?php foreach ($articles as $article): ?>
-        <h2><?= $article['name'] ?></h2>
-        <p><?= substr($article['content'], 0, 100) ?>...</p>
-        <a href="<?= site_url('articles/view/' . $article['id']) ?>">Lire la suite</a>
+        // Call the view for each article
+        <?php $this->load->view('articles/ArticleDisplay', ['article' => $article]); ?>
     <?php endforeach; ?>
 </div>
