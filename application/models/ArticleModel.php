@@ -1,6 +1,4 @@
 <?php
-require_once APPPATH.DIRECTORY_SEPARATOR.'models/ArticleEntity.php';
-require APPPATH."..".DIRECTORY_SEPARATOR."system".DIRECTORY_SEPARATOR."core".DIRECTORY_SEPARATOR."Model.php";
 
 class ArticleModel extends CI_Model {
     public function __construct() {
